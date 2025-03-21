@@ -223,7 +223,12 @@ button:active {
 
 /* FEATURES */
 
-#features {
-
+#features { 
+    padding: 8vw;
     background-color: rgba(115, 66, 214, 0.1);
-};
+   
+
+   
+
+}
+
