@@ -21,8 +21,22 @@ h2 {
 a {
     text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+}
 p {
     line-height: 1.5;
+}
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+/* watch the video at 39 min 22 sec for this section */
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
     
@@ -240,9 +254,11 @@ flex-wrap: wrap;
     margin-bottom: 8px;
     border-radius: 4px;
     overflow: hidden;
+    display: flex;
 
 
 }
+/* Following up with my mentors on transition command not working  */
 .book__img {
     max-height: 380px;
     transition: all 300ms linear;
@@ -268,3 +284,52 @@ img {
     width: 25%;
     padding: 24px;
 }
+.book:hover .book__img {
+    transform: scale(1.05);
+    
+}
+.book__title:hover {
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+.book__price--normal {
+    text-decoration: line-through;
+    padding-right: 6px;
+    color: #bfbfbf;
+}
+.row__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* EXPLORE 
+ */
+ #explore {
+    background-color: rgba(115, 66, 214, 0.1);
+ }
+ /* FOOTER 
+  */
+  footer {
+    background-color: #242424;
+  }
+  .footer__logo--img {
+    width: 160px;
+    filter: grayscale(1) invert(1);
+
+  }
+  .footer__list{
+    margin: 20px 0 24px;
+  }
+  .footer__link {
+    padding: 0 8px;
+  }
+  .footer__link, .footer__copyright {
+    color: rgb(255, 255, 255);
+  }
+  .no-cursor {
+    cursor: not-allowed;
+  }
+  .footer__logo {
+    display: flex;
+  }
